@@ -5,11 +5,16 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <title>FERNANDO JUÁREZ</title>
+
   <!-- CSS  -->
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/fonts.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  
+
 </head>
+
 <!-- BODY -->
 <body>
   <!-- HEADER -->
@@ -20,22 +25,25 @@
         <div class="container">
           <a id="logo-container" href="#" class="brand-logo" ><span><i class="mdi-social-person"></span></i> Contacto</a> 
           <ul id="nav-mobile" class="right side-nav">
-            <li><a href="index.html" ><i class="mdi-action-perm-contact-cal left"></i>Contacto</a></li>
-            <li><a href="proyectos.html" ><i class="mdi-action-group-work left"></i>Proyectos</a></li>
-            <li><a href="cv.html"><i class="mdi-file-file-download left"></i>Currículum</a></li>
+            <li><a href="#" ><i class="mdi-action-perm-contact-cal left"></i>Contacto</a></li>
+            <li><a href="#" ><i class="mdi-action-group-work left"></i>Proyectos</a></li>
+            <li><a href="#"><i class="mdi-file-file-download left"></i>Currículum</a></li>
           </ul>
           <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
         </div>
       </div>
     </nav>
+    
   </header>
   <!-- HEADER BACKGROUND -->
   <div class="section cyan darken-2 header-background" ></div>
   <!-- FAB BUTTON -->
   <div class="fab"><a href="mailto:ferezvi@gmail.com?Subject=Contacto" class="btn-floating btn-large waves-effect waves-light red"><i class="mdi-communication-email"></i></a></div>  
   <!-- MAIN CONTAINER -->
+  
   <div class="main row">
     <div class="main-container col s12 m10 l8 offset-m1 offset-l2 grey lighten-4 ">
+     
          <div class="personal_info grey-text text-darken-4">
               <h4 class="center">Fernando Juárez Villarreal </h4><br>
               <p><h5 ><i class="mdi-communication-call"></i> (55) 10681826</h5></p>
@@ -63,21 +71,22 @@
       function checkWidth() {
           var windowsize = $window.width();
           
+
           if(windowsize >= 601){
                 
                 $( ".main-container" ).addClass( "z-depth-2");
                 $( ".main-container" ).addClass( "grey lighten-4");
-                $( ".social-contact a i" ).addClass( "big-font");
                 $(".header-background").addClass("cyan darken-2 z-depth-1");
                 $(".body").removeClass("grey lighten-4");       
           }
+
           else  {
               
               $( ".main-container" ).removeClass( "z-depth-2");
               $( ".main-container" ).removeClass( "grey lighten-4");
               $(".header-background").removeClass("cyan darken-2 z-depth-1");
-              $( ".social-contact a i" ).removeClass( "big-font");
               $(".body").addClass("grey lighten-4");
+            
           }
       }
       // Execute on load
@@ -85,6 +94,12 @@
       // Bind event listener
       $(window).resize(checkWidth);
     });
+
+
+
+
+
+
   </script>
   </body>
 </html>
