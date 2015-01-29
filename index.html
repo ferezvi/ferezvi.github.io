@@ -16,7 +16,7 @@
 </head>
 
 <!-- BODY -->
-<body class="">
+<body>
   <!-- HEADER -->
   <header>
     <!-- Navigation Bar -->
@@ -36,13 +36,13 @@
     
   </header>
   <!-- HEADER BACKGROUND -->
-  <div class="section z-depth-1 cyan darken-2 darken-2 header-background" ></div>
+  <div class="section cyan darken-2 header-background" ></div>
   <!-- FAB BUTTON -->
   <div class="fab"><a href="mailto:ferezvi@gmail.com?Subject=Contacto" class="btn-floating btn-large waves-effect waves-light red"><i class="mdi-communication-email"></i></a></div>  
   <!-- MAIN CONTAINER -->
   
   <div class="main row">
-    <div class="main-container col s12 m10 l8 offset-m1 offset-l2 z-depth-2 grey lighten-4 ">
+    <div class="main-container col s12 m10 l8 offset-m1 offset-l2 grey lighten-4 ">
      
          <div class="personal_info grey-text text-darken-4">
               <h4 class="center">Fernando Juárez Villarreal </h4><br>
@@ -63,5 +63,43 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      // Optimalisation: Store the references outside the event handler:
+      var $window = $(window);
+      
+      function checkWidth() {
+          var windowsize = $window.width();
+          
+
+          if(windowsize >= 601){
+                
+                $( ".main-container" ).addClass( "z-depth-2");
+                $( ".main-container" ).addClass( "grey lighten-4");
+                $(".header-background").addClass("cyan darken-2 z-depth-1");
+                $(".body").removeClass("grey lighten-4");       
+          }
+
+          else  {
+              
+              $( ".main-container" ).removeClass( "z-depth-2");
+              $( ".main-container" ).removeClass( "grey lighten-4");
+              $(".header-background").removeClass("cyan darken-2 z-depth-1");
+              $(".body").addClass("grey lighten-4");
+            
+          }
+      }
+      // Execute on load
+      checkWidth();
+      // Bind event listener
+      $(window).resize(checkWidth);
+    });
+
+
+
+
+
+
+  </script>
   </body>
 </html>
