@@ -1,0 +1,53 @@
+html, body{ height: 100%; }
+
+
+.main {
+	height: 85%;
+	margin-top:-10rem;
+}
+
+.main-container{
+	height: 100%;
+	margin-bottom: 0;
+}
+
+.main-container div {
+
+	height: 100%;
+}
+
+.header-background{
+
+	height: 15%;
+}
+
+.fab {
+
+	position: fixed;
+	 
+	  right: 1rem;
+	  bottom: 1rem;
+ 
+
+}
+
+@media only screen and (min-width : 601px) {
+  .fab {
+    	right: 1rem;
+	 	top: 9rem; }
+ }
+
+@media only screen and (min-width : 993px) {
+  .fab {
+    	right: 3rem;
+		top: 9rem; }
+ }
+
+
+/***************************************************************************************/
+
+.personal_info{
+
+	border-left-width: 20px;
+	border-left-color: orange;
+}
